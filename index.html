@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Machine Learning Visualization</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Machine Learning Visualization</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#linear-regression">Linear Regression</a></li>
+      <li><a href="#decision-tree">Decision Tree</a></li>
+      <!-- Add more model options here -->
+    </ul>
+  </nav>
+
+  <main>
+    <div id="input-container">
+      <!-- Placeholder for input variation -->
+      <h1>control</h1>
+      <label for="num-points">Number of Points (Approximate):</label>
+      <input type="number" id="num-points" min="1" value="50">
+      <button id="scatter-btn" onclick="scatterRandomPoints()">Scatter Points</button>
+      <hr>
+      <button id="scatter-btn" onclick="kmeans()">Start K-means</button>
+      
+    </div>
+
+    <div id="visualization-container">
+      <canvas id="visualization-canvas" width="1920" height="1280">
+      </canvas>
+    </div>
+    <div id="visualization-two-container">
+        <h1>Notes:</h1>
+    </div>
+  </main>
+
+  <footer>
+    <p>Created by Mohab Elrouby &copy; 2023</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
